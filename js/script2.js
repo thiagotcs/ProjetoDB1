@@ -1,16 +1,24 @@
-function contar(){
-    let txt = document.getElementById('txt')
-    let msg = document.querySelector('div#msg')
-    if(txt.value.length == 0){
-        window.alert("[ERRO] Digite um Texto!!!")
-  
-    }else{
-        
-            msg.innerHTML = `O texto digitado ${txt.value} tem:<br>`
-            msg.innerHTML += `O total de caracteres de texto ${txt.value.length}<br>`
-            msg.innerHTML += `O total de espaço em branco no texto ${""}<br>`
-            msg.innerHTML += `O total de vogais no texto ${""}`   
-        };
-    };
-    
-    
+function contar() {
+  let txt = document.getElementById("txt");
+  let msg = document.querySelector("div#msg");
+  if (!txt.value) {
+    return window.alert("[ERRO] Digite um Texto!!!");
+  }
+  var vogais = ["a", "e", "i", "o", "u"];
+  let string = txt.value.split("");
+  let qtdCaracteres = 0;
+  var qtdEspacos = 0;
+  var qtdVogais = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === " ") {
+      qtdEspacos++;
+    }
+    if (vogais.includes(string[i].toLowerCase())) {
+      qtdVogais++;
+    }
+    if (string[i] !== " ") {
+      qtdCaracteres++;
+    }
+  }
+  msg.innerHTML = `${qtdCaracteres} caracteres, ${qtdEspacos} espaços em branco, ${qtdVogais} vogais`;
+}
