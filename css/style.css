@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.app{
+    background: #f7f7f7;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "cabecalho"
+        "container"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 73px 88vh  auto; 
+}
+.cabecalho{
+    background: #cdcdcd;
+    grid-area: cabecalho;
+}
+.div_img{
+    max-height: 55px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+ }
+.div_titutlo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px 0px 0px 20px;
+    font-size: 16px;
+    color: #333;
+    font-family: inherit;
+}
+.menu{
+
+}
+.container{
+    background: #f9f9f9;
+    grid-area: container;
+    text-align: center;
+    
+}
+.conteudo{
+    width: 500px;
+    margin: auto;
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    text-align: center;
+    
+}
+.conteudo h1{
+    color: rgba(128, 5, 9, 0.808);
+}
+.conteudo p{
+    margin-bottom: 20px;
+
+}
+
+button.button_menu{
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 300px;
+    width: 100%;
+    max-height: 70px;
+    height: 100%;
+    background-color: rgba(185,184,184,0.808);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.8);
+    color: rgb(235, 247, 236);
+    transition-duration: 1s;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+button{
+    border: 2px solid #5e5858;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button.button_menu a{
+    text-decoration: none;
+    color: #726767;
+}
+button.button_menu a:hover{
+    text-decoration: none;
+    color: #0a0a0a;
+}
+button.button_menu:hover{
+    background-color: rgba(240, 87, 91, 0.808);
+}
+
+button.button_voltar{
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 200px;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+    background-color: rgba(185,184,184,0.808);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.8);
+    color: rgb(235, 247, 236);
+    transition-duration: 1s;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+button.button_voltar a{
+    text-decoration: none;
+    color: #726767;
+
+}
+button.button_voltar:hover{
+    background-color: rgba(240, 87, 91, 0.808);
+}
+
+
+
+
+
+
+
+
+
+.rodape{
+    background: #18191a;
+    grid-area: rodape;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+
+
+
+
+
+
