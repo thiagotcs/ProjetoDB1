@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Roboto, sans-serif;
+  background: rgb(18, 18, 20);
+  color: rgb(168, 168, 179);
+  text-rendering: optimizelegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.cabecalho {
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 30px;
+  background: rgb(32, 32, 36);
+}
+
+nav {
+  width: 100%;
+  max-width: 1366px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+.div_img {
+  width: 200px;
+  height: 72px;
+}
+
+.div_img img {
+  width: 80%;
+  margin-left: 30px;
+}
+
+.div_titutlo {
+  font-size: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1152px;
+  margin: 0px auto;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+
+.container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  color: #e1e1e6;
+}
+
+.conteudo {
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(to left, rgb(45, 38, 74), rgb(32, 32, 36));
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+  text-align: center;
+}
+
+.container_button {
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.conteudo h1 {
+  color: #e1e1e6;
+  font-size: 48px;
+  /* color: #3A3A3A; */
+  max-width: 450px;
+  line-height: 56px;
+  margin-top: 80px;
+}
+
+form {
+  margin: 40px 0;
+  max-width: 1112px;
+  display: flex;
+}
+
+form input {
+  flex: 1;
+  height: 70px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  color: #3a3a3a;
+  border: 2px solid #fff;
+  border-right: 0;
+}
+
+button {
+  width: 210px;
+  height: 70px;
+  background: #04d361;
+  border-radius: 0px 5px 5px 0px;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  transition: filter 0.2s;
+  font-size: 20px;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+button.button_voltar {
+  width: 210px;
+  height: 70px;
+  background: #8257e5;
+  border-radius: 0px 5px 5px 0px;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  transition: filter 0.2s;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+button.button_voltar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button.button_voltar:hover {
+  filter: brightness(0.9);
+}
+
+.rodape {
+  background: #18191a;
+  text-align: center;
+  color: #f7f7f7;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
